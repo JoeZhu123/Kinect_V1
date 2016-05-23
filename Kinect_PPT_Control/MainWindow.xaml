@@ -1,0 +1,18 @@
+﻿<Window x:Class="Kinect_PPT_Control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kinect_PPT_Control"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="640" Loaded="Window_Loaded">
+    <Grid>
+        <Image Height="480" Width="640" Name="ColorImage">
+        </Image>
+        <Canvas Background="Transparent" Name="SkeletonCanvas">
+            <Ellipse Fill="Red" Height="20" Width="20" Name="ellipseLeftHand" Stroke="White"/>
+            <Ellipse Fill="Red" Height="20" Width="20" Name="ellipseRightHand" Stroke="White"/>
+            <Ellipse Fill="Red" Height="20" Width="20" Name="ellipseHead" Stroke="White"/>
+        </Canvas>
+    </Grid>
+</Window>
